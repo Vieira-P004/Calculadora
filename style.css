@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /*importante para calculo de dimensão de entradas*/
+}
+
+.Calculadora {
+    background-color: #f2f2f2;
+    padding: 20px;
+    /*preenchimento no container*/
+    max-width: 400px;
+    /*limita o tamanho geral*/
+    margin: 0 auto;
+    /*margem sup e inf = 0 e hori e vert = automatico = centarlizando*/
+    border: solid 1px #ccc;
+    /*criado uma bordar*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    /*criando um espaço na parte superior*/
+    border-radius: 5px;
+    /*bordar redonda*/
+}
+
+#resultado {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
+}
+
+.botao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colonas e 1fr = tamanhos iguais*/
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.limpar {
+    background-color: darkred;
+    color: #fff;
+}
+
+.numero,
+.decimal {
+    background-color: #fff;
+
+}
+
+.operador {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.igual {
+    background-color: aquamarine;
+    grid-row: span 3;
+    color: #fff;
+}
